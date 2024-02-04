@@ -35,6 +35,8 @@ kubectl get deploy -l app=nginx-app
 kubectl get rs -l app=nginx-app
 kubectl get po -l app=nginx-app
 kubectl describe deploy nginx-deploy
+#to generate a sample deployment yaml file to work on as a base
+#kubectl create deployment my_deployment --image=nginx --dry-run=client -o yaml > my_deployment.yaml
 
 *******************************************************************
 # 3. Testing: Rollback update 
